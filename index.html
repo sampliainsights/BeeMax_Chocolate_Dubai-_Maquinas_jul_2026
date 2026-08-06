@@ -13,7 +13,7 @@
     *::before,
     *::after {
       box-sizing: border-box;
-      margin: 0;  
+      margin: 0;
       padding: 0
     }
 
@@ -378,7 +378,7 @@
       background: var(--bg-100)
     }
 
-    .sidebar-questions > summary {
+    .sidebar-questions>summary {
       display: flex;
       align-items: center;
       gap: 9px;
@@ -392,23 +392,30 @@
       transition: background var(--tr), color var(--tr)
     }
 
-    .sidebar-questions > summary::-webkit-details-marker { display: none }
+    .sidebar-questions>summary::-webkit-details-marker {
+      display: none
+    }
 
-    .sidebar-questions > summary:hover {
+    .sidebar-questions>summary:hover {
       background: var(--bg-hover);
       color: var(--txt-1)
     }
 
-    .sidebar-questions > summary .sq-icon { flex-shrink: 0; opacity: .7 }
+    .sidebar-questions>summary .sq-icon {
+      flex-shrink: 0;
+      opacity: .7
+    }
 
-    .sidebar-questions > summary .sq-chevron {
+    .sidebar-questions>summary .sq-chevron {
       margin-left: auto;
       flex-shrink: 0;
       opacity: .6;
       transition: transform var(--tr)
     }
 
-    .sidebar-questions[open] > summary .sq-chevron { transform: rotate(180deg) }
+    .sidebar-questions[open]>summary .sq-chevron {
+      transform: rotate(180deg)
+    }
 
     .sq-list {
       list-style: none;
@@ -1209,7 +1216,7 @@
     .plb-bar-fill {
       height: 100%;
       border-radius: 4px;
-      transition: width .8s cubic-bezier(.22,.68,0,1.2)
+      transition: width .8s cubic-bezier(.22, .68, 0, 1.2)
     }
 
     .plb-right {
@@ -2108,11 +2115,13 @@
       font-weight: 700;
       fill: var(--txt-1);
     }
+
     .flow-sub {
       font-size: 8px;
       font-weight: 600;
       fill: var(--txt-3);
     }
+
     .flow-head {
       font-size: 10px;
       font-weight: 700;
@@ -2120,10 +2129,12 @@
       text-transform: uppercase;
       fill: var(--txt-3);
     }
+
     .flow-ribbon {
       transition: fill-opacity .18s ease;
       cursor: pointer;
     }
+
     .flow-ribbon:hover {
       fill-opacity: .62 !important;
     }
@@ -2856,7 +2867,8 @@
       <div class="sidebar-campaign">
         <div class="sidebar-campaign-label">Campaña</div>
         <div class="sidebar-campaign-title">BeeMax · Chocolate Estilo Dubai</div>
-        <div class="sidebar-campaign-sub">Encuesta realizada a usuarios que participaron en la activación en el circuito de máquinas.</div>
+        <div class="sidebar-campaign-sub">Encuesta realizada a usuarios que participaron en la activación en el circuito
+          de máquinas.</div>
         <div class="sidebar-campaign-meta">
           <div class="sc-meta-row">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none"
@@ -2896,7 +2908,14 @@
           </div>
         </div>
         <div style="margin-top:9px;padding-top:9px;border-top:1px solid var(--border-md);">
-          <span style="display:inline-flex;align-items:center;gap:5px;font-size:9.5px;font-weight:600;color:var(--green);background:var(--green-bg);border:1px solid rgba(2,79,54,.18);border-radius:var(--r-full);padding:3px 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>Benchmark chocolate 2025</span>
+          <span
+            style="display:inline-flex;align-items:center;gap:5px;font-size:9.5px;font-weight:600;color:var(--green);background:var(--green-bg);border:1px solid rgba(2,79,54,.18);border-radius:var(--r-full);padding:3px 10px;"><svg
+              xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10" />
+              <line x1="12" y1="20" x2="12" y2="4" />
+              <line x1="6" y1="20" x2="6" y2="14" />
+            </svg>Benchmark chocolate 2025</span>
         </div>
       </div>
 
@@ -3019,13 +3038,15 @@
       <div class="sidebar-bottom">
         <details class="sidebar-questions">
           <summary>
-            <svg class="sq-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="sq-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
               <line x1="12" y1="17" x2="12.01" y2="17" />
               <circle cx="12" cy="12" r="10" />
             </svg>
             Preguntas de la encuesta
-            <svg class="sq-chevron" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="sq-chevron" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9" />
             </svg>
           </summary>
@@ -3084,7 +3105,8 @@
         <div class="pdf-hero" id="pdfHero">
           <div>
             <div class="pdf-hero-title">BeeMax Chocolate Estilo Dubai · Samplia X 2026</div>
-            <div class="pdf-hero-sub">Encuesta realizada a usuarios que participaron en la activación en el circuito de máquinas · Centros comerciales de Madrid · Del 15 al 19 de julio de 2026 · 14.112 muestras</div>
+            <div class="pdf-hero-sub">Encuesta realizada a usuarios que participaron en la activación en el circuito de
+              máquinas · Centros comerciales de Madrid · Del 15 al 19 de julio de 2026 · 14.112 muestras</div>
           </div>
         </div>
 
@@ -3141,7 +3163,8 @@
               <div class="kpi-icon" style="background:var(--brand-muted);color:var(--primary-100);">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                 </svg>
               </div>
               <div class="kpi-label">Valoración de sabor</div>
@@ -3153,12 +3176,14 @@
               <div class="kpi-icon" style="background:var(--brand-muted);color:var(--primary-100);">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                 </svg>
               </div>
               <div class="kpi-label">NPS · Recomendación</div>
               <div class="kpi-value" style="color:var(--accent-100);" id="kpiValoracion">—</div>
-              <div class="kpi-sub" id="kpiNpsMedia" style="margin-bottom:5px;">Puntuación media de recomendación (0–10)</div>
+              <div class="kpi-sub" id="kpiNpsMedia" style="margin-bottom:5px;">Puntuación media de recomendación (0–10)
+              </div>
               <div id="kpiValoracionBench"></div>
             </div>
           </div>
@@ -3191,16 +3216,19 @@
                 </div>
                 <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px;">
                   <div id="genderBadgesContainer" style="display:contents;"></div>
-                  <div style="background:var(--blue-bg);border-radius:var(--r-full);padding:6px 12px;display:flex;align-items:center;gap:4px;white-space:nowrap;">
+                  <div
+                    style="background:var(--blue-bg);border-radius:var(--r-full);padding:6px 12px;display:flex;align-items:center;gap:4px;white-space:nowrap;">
                     <span style="font-size:11px;font-weight:600;color:var(--txt-1);">Edad promedio:</span>
                     <span style="font-size:13px;font-weight:800;color:var(--accent-100);" id="edadMediaValue">—</span>
                   </div>
-                  <div style="background:var(--blue-bg);border-radius:var(--r-full);padding:6px 12px;display:flex;align-items:center;gap:4px;white-space:nowrap;">
+                  <div
+                    style="background:var(--blue-bg);border-radius:var(--r-full);padding:6px 12px;display:flex;align-items:center;gap:4px;white-space:nowrap;">
                     <span style="font-size:11px;font-weight:600;color:var(--txt-1);">Moda de la edad:</span>
                     <span style="font-size:13px;font-weight:800;color:var(--accent-100);" id="edadModaValue">—</span>
                   </div>
                 </div>
-                <div class="chart-wrap" style="flex:1 1 auto;min-width:0;min-height:220px;"><canvas id="chartEdad"></canvas></div>
+                <div class="chart-wrap" style="flex:1 1 auto;min-width:0;min-height:220px;"><canvas
+                    id="chartEdad"></canvas></div>
               </div>
             </div>
           </div>
@@ -3256,7 +3284,7 @@
           <div id="dynChartsIntencion"></div>
         </div>
 
-        
+
 
         <!-- ── INSIGHTS ── -->
         <div id="insights" style="scroll-margin-top:72px;">
@@ -3282,7 +3310,8 @@
             <div class="card-inner">
               <div class="card-header">
                 <div class="card-label">Galería</div>
-                <h3 class="card-question">BeeMax Chocolate Estilo Dubai · Circuito de máquinas Samplia · Centros comerciales de Madrid</h3>
+                <h3 class="card-question">BeeMax Chocolate Estilo Dubai · Circuito de máquinas Samplia · Centros
+                  comerciales de Madrid</h3>
               </div>
               <div class="photo-grid" id="mediaPhotos"></div>
             </div>
@@ -3302,10 +3331,15 @@
             <div class="card-inner">
               <div class="card-header">
                 <div class="card-label">Vídeo</div>
-                <h3 class="card-question">BeeMax Chocolate Estilo Dubai · Circuito de máquinas Samplia · Centros comerciales de Madrid</h3>
+                <h3 class="card-question">BeeMax Chocolate Estilo Dubai · Circuito de máquinas Samplia · Centros
+                  comerciales de Madrid</h3>
               </div>
               <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/hanpb8ZNvcw" title="Vídeo de la campaña BeeMax Chocolate Estilo Dubai · Circuito de máquinas Samplia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/hanpb8ZNvcw"
+                  title="Vídeo de la campaña BeeMax Chocolate Estilo Dubai · Circuito de máquinas Samplia"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -3323,7 +3357,9 @@
 
         <div class="page-footer"
           style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:40px;padding-top:20px;border-top:1px solid var(--border);">
-          <span style="font-size:11px;color:var(--txt-3);" id="footerInfo">Total encuestados: — · BeeMax Chocolate Estilo Dubai · Circuito de máquinas Samplia · Centros comerciales de Madrid · Del 15 al 19 de julio de 2026</span>
+          <span style="font-size:11px;color:var(--txt-3);" id="footerInfo">Total encuestados: — · BeeMax Chocolate
+            Estilo Dubai · Circuito de máquinas Samplia · Centros comerciales de Madrid · Del 15 al 19 de julio de
+            2026</span>
         </div>
 
       </main>
@@ -3426,6 +3462,7 @@
         // previo, y la fila se inserta en la sección del que abre el par (pairStart).
         // hbar: dos respuestas pasan de 50 caracteres y en vertical se apilaban en 4 líneas.
         type: 'hbar', section: 'conocimiento', pairEnd: true,
+        t2b: ['Muy superior', 'Es muy superior', 'Ligeramente mejor', 'Ligeramente superior', 'Es ligeramente mejor'],
         fixedOrder: [
           'Muy superior', 'Es muy superior',
           'Ligeramente mejor', 'Ligeramente superior', 'Es ligeramente mejor',
@@ -3459,7 +3496,7 @@
       },
       {
         col: 'HIEOGzWayi3OTZVed5S1', title: 'Detalle de lo que llama la atención',
-        sub: '¿Puedes decirnos cuál?',
+        sub: '¿Puedes decirnos cuál? (respuesta abierta)',
         // Texto libre con 83 respuestas distintas sobre una base pequeña: topN recorta a las
         // 5 más repetidas (por defecto los gráficos de barras muestran hasta 14).
         // Todo el gráfico va en el mismo gris que la barra 'Otro' de al lado: sólo lo contestan
@@ -3516,15 +3553,15 @@
         }
       },
       {
-        col: 'KvIEjTzERWFzurF0UKXp', title: 'Ocasión de compra',
-        sub: '¿Y lo comprarías para?',
-        type: 'bar', section: 'intencion', multi: true, blueGradient: true, pairStart: true
-      },
-      {
         // Barras rojas negativas: se dibujan hacia abajo del cero (frame negativo).
         col: 'lx7K6NXFzkjKwPPyhYJB', title: 'Principal freno de compra',
         sub: '¿Cuál de los siguientes factores consideras que podría ser tu principal inconveniente o freno para no comprar este chocolate en el supermercado?',
-        type: 'bar', section: 'intencion', redGradient: true, negative: true, pairEnd: true
+        type: 'bar', section: 'intencion', redGradient: true, negative: true, pairStart: true
+      },
+      {
+        col: 'KvIEjTzERWFzurF0UKXp', title: 'Ocasión de compra',
+        sub: '¿Y lo comprarías para?',
+        type: 'bar', section: 'intencion', multi: true, blueGradient: true, pairEnd: true
       },
       {
         col: 'lJvzoqdgZxXyxOKQnlo6', title: '¿Lo recomendarías?',
@@ -3586,8 +3623,8 @@
       if (cmap[label]) return cmap[label];
       const nl = norm(label);
       const k = Object.keys(cmap).find(k => norm(k) === nl) ||
-                Object.keys(cmap).find(k => nl.startsWith(norm(k))) ||
-                Object.keys(cmap).find(k => norm(k).length > 3 && nl.includes(norm(k)));
+        Object.keys(cmap).find(k => nl.startsWith(norm(k))) ||
+        Object.keys(cmap).find(k => norm(k).length > 3 && nl.includes(norm(k)));
       return k ? cmap[k] : fallback;
     }
     // Colores de las barras a partir de la config de la pregunta. Un colorMap fija categorías
@@ -4106,7 +4143,7 @@
         scoreBands.map(b => `<div style="display:flex;align-items:center;gap:5px;">
           <span style="width:10px;height:10px;border-radius:3px;background:${b.color};flex-shrink:0;display:inline-block;"></span>
           <span style="font-size:10.5px;font-weight:600;color:var(--txt-2);">${b.label}</span>
-          <span style="font-size:10px;color:var(--txt-3);font-weight:500;">(${b.range[0]}–${b.range[b.range.length-1]})</span>
+          <span style="font-size:10px;color:var(--txt-3);font-weight:500;">(${b.range[0]}–${b.range[b.range.length - 1]})</span>
         </div>`).join('') + `</div>`;
       container.innerHTML = legendHTML + `<div class="score-summary"><div class="chart-wrap h160"><canvas id="${chartId}"></canvas></div></div><div class="score-badges">${badgesHTML}</div>`;
       const labels = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
@@ -4286,8 +4323,8 @@
       const total = arr.length;
       if (!entries.length) { container.innerHTML = '<div class="no-data">Sin datos disponibles</div>'; return; }
       const maxVal = entries[0][1];
-      const blueScale = ['#1F2F5C','#375395','#4A67A6','#5E7AB7','#8296C8','#AEBCDA'];
-      const barColors = q.redGradient ? corporateShades(entries.length) : (q.blueGradient ? Array.from({length: entries.length}, (_, i) => blueScale[Math.min(i, blueScale.length - 1)]) : entries.map((_, i) => VARIETY_COLORS[i % VARIETY_COLORS.length]));
+      const blueScale = ['#1F2F5C', '#375395', '#4A67A6', '#5E7AB7', '#8296C8', '#AEBCDA'];
+      const barColors = q.redGradient ? corporateShades(entries.length) : (q.blueGradient ? Array.from({ length: entries.length }, (_, i) => blueScale[Math.min(i, blueScale.length - 1)]) : entries.map((_, i) => VARIETY_COLORS[i % VARIETY_COLORS.length]));
       const badgeBgs = q.blueGradient ? [
         'linear-gradient(135deg,#0F1729,#375395)',
         'linear-gradient(135deg,#375395,#4A67A6)',
@@ -4297,9 +4334,9 @@
         'linear-gradient(135deg,#59606F,#A1A6AF)',
         'linear-gradient(135deg,#B51A03,#DC6B58)'
       ];
-      const topBg = q.blueGradient ? ['rgba(30,64,175,.07)','rgba(29,78,216,.05)','rgba(37,99,235,.05)'] : ['rgba(201,162,39,.07)', 'rgba(91,100,113,.05)', 'rgba(155,79,26,.05)'];
-      const topBorder = q.blueGradient ? ['rgba(30,64,175,.32)','rgba(29,78,216,.24)','rgba(37,99,235,.24)'] : ['rgba(201,162,39,.32)', 'rgba(91,100,113,.24)', 'rgba(155,79,26,.24)'];
-      const buildItem = function([label, count], i) {
+      const topBg = q.blueGradient ? ['rgba(30,64,175,.07)', 'rgba(29,78,216,.05)', 'rgba(37,99,235,.05)'] : ['rgba(201,162,39,.07)', 'rgba(91,100,113,.05)', 'rgba(155,79,26,.05)'];
+      const topBorder = q.blueGradient ? ['rgba(30,64,175,.32)', 'rgba(29,78,216,.24)', 'rgba(37,99,235,.24)'] : ['rgba(201,162,39,.32)', 'rgba(91,100,113,.24)', 'rgba(155,79,26,.24)'];
+      const buildItem = function ([label, count], i) {
         const p = pct(count, total);
         const barPct = maxVal > 0 ? Math.round(count / maxVal * 100) : 0;
         const barCol = barColors[i] || '#E0253F';
@@ -4321,8 +4358,8 @@
       };
       const top3 = entries.slice(0, 3);
       const rest = entries.slice(3);
-      let html = top3.map(function(e, i) { return buildItem(e, i); }).join('');
-      if (rest.length) html += rest.map(function(e, i) { return buildItem(e, i + 3); }).join('');
+      let html = top3.map(function (e, i) { return buildItem(e, i); }).join('');
+      if (rest.length) html += rest.map(function (e, i) { return buildItem(e, i + 3); }).join('');
       container.innerHTML = `<div class="plb-wrap">${html}</div>`;
     }
 
@@ -4474,9 +4511,9 @@
       if (!entries.length) { container.innerHTML = '<div class="no-data">Sin datos disponibles</div>'; return; }
       const total = entries.reduce((s, e) => s + e[1], 0);
       function lighten(hex, amt) {
-        const n = parseInt(hex.replace('#',''), 16);
+        const n = parseInt(hex.replace('#', ''), 16);
         const r = Math.min(255, (n >> 16) + amt), g = Math.min(255, ((n >> 8) & 0xff) + amt), b = Math.min(255, (n & 0xff) + amt);
-        return '#' + [r,g,b].map(x => x.toString(16).padStart(2,'0')).join('');
+        return '#' + [r, g, b].map(x => x.toString(16).padStart(2, '0')).join('');
       }
       const items = entries.map((e, i) => { const p = pct(e[1], total); return { label: e[0], count: e[1], pct: p, color: colors[i % colors.length] }; });
       const html = items.map(item => {
@@ -5154,13 +5191,13 @@
             const arr = getColData(rows, pIdx);
             return { name: p.name, arr, sub: p.sub, q: Object.assign({}, q, { col: p.col, colorMap: p.colorMap }) };
           });
-          window.switchScoreChart = function(cid, pIdx) {
+          window.switchScoreChart = function (cid, pIdx) {
             const products = window.scoreChartData[cid];
             if (!products) return;
             const product = products[pIdx];
             const qEl = document.getElementById(cid + '_question');
             if (qEl) qEl.textContent = product.sub;
-            document.querySelectorAll(`button[data-chart="${cid}"]`).forEach(function(b, i) {
+            document.querySelectorAll(`button[data-chart="${cid}"]`).forEach(function (b, i) {
               const active = i === pIdx;
               b.classList.toggle('active', active);
               b.style.background = active ? 'var(--bg-input)' : 'transparent';
@@ -5169,7 +5206,7 @@
             const container = document.getElementById(cid);
             if (container) renderScore(container, product.arr, product.q);
           };
-          setTimeout(function() { switchScoreChart(chartId, 0); }, 50);
+          setTimeout(function () { switchScoreChart(chartId, 0); }, 50);
         } else if (q.type === 'treemap') {
           const el = document.getElementById(chartId);
           if (el) renderTreemap(el, rows, q);
@@ -5190,7 +5227,7 @@
           const data = entries.map(e => e[1]);
           const colors = entryColors(q, entries);
           makeBar(chartId, labels, data, colors, true, true, false, true, !!q.negative);
-          if (q.t2b) { const t2bCount = q.t2b.reduce((s, lbl) => { const e = entries.find(e => e[0].trim().toLowerCase() === lbl.trim().toLowerCase()); return s + (e ? e[1] : 0); }, 0); const t2bPct = pct(t2bCount, total); const pillSlot = document.getElementById(chartId + '_pill'); if (pillSlot) { pillSlot.innerHTML = `<div class="score-avg-pill" style="border-color:#37539544;background:#37539518;"><span class="score-avg-label" style="color:#375395;">Top 2 Box</span><span class="score-avg-val" style="color:#375395;">${t2bPct}%</span></div>`; }; }
+          if (q.t2b) { const t2bCount = q.t2b.reduce((s, lbl) => { const e = entries.find(e => e[0].trim().toLowerCase() === lbl.trim().toLowerCase()); return s + (e ? e[1] : 0); }, 0); const t2bPct = pct(t2bCount, total); const pillSlot = document.getElementById(chartId + '_pill'); if (pillSlot) { pillSlot.innerHTML = `<div class="score-avg-pill" style="margin-right:auto; border-color:#37539544;background:#37539518;"><span class="score-avg-label" style="color:#375395;">Top 2 Box</span><span class="score-avg-val" style="color:#375395;">${t2bPct}%</span></div>`; }; }
         } else if (q.type === 'bar') {
           const arr = q.multi ? getColDataMulti(rows, idx) : getColData(rows, idx);
           const counts = countSingle(arr); let entries = sortedEntries(counts, q.topN || 14);
@@ -5295,7 +5332,7 @@
           let arr = q.multi ? getColDataMulti(rows, idx) : getColData(rows, idx);
           const counts = countSingle(arr); const entries = sortedEntries(counts, 14).filter(e => !HIDDEN_PRODUCTS.has(norm(e[0])));
           if (!entries.length) { const el = document.getElementById(chartId); if (el) el.parentElement.innerHTML = '<div class="no-data">Sin datos disponibles</div>'; return; }
-          const blueTreemap = ['#1F2F5C','#375395','#4A67A6','#5E7AB7','#8296C8','#AEBCDA'];
+          const blueTreemap = ['#1F2F5C', '#375395', '#4A67A6', '#5E7AB7', '#8296C8', '#AEBCDA'];
           const colors = q.redFirst
             ? entries.map((e, ci) => (q.colorMap && q.colorMap[e[0]]) ? q.colorMap[e[0]] : (ci === 0 ? '#E0253F' : blueTreemap[Math.min(ci - 1, blueTreemap.length - 1)]))
             : entries.map((e, ci) => (q.colorMap && q.colorMap[e[0]]) ? q.colorMap[e[0]] : VARIETY_COLORS[ci % VARIETY_COLORS.length]);
@@ -5334,7 +5371,7 @@
             if (q.pillFrom.order && q.pillFrom.order.length) {
               picks = q.pillFrom.order.map(lbl => {
                 const key = Object.keys(counts).find(k => norm(k) === norm(lbl)) ||
-                            Object.keys(counts).find(k => norm(k).includes(norm(lbl)));
+                  Object.keys(counts).find(k => norm(k).includes(norm(lbl)));
                 return key ? [key, counts[key]] : null;
               }).filter(Boolean);
             } else {
@@ -5479,7 +5516,7 @@
         const l = norm(v);
         if (l === 'no' || l.startsWith('no ') || l.startsWith('no,')) return false;
         return l.includes('comprador potencial') || l.includes('compradores potenciales') ||
-               l.startsWith('si') || l.includes('lo comprare');
+          l.startsWith('si') || l.includes('lo comprare');
       }).length;
       const iPct = iArr.length ? pct(compradores, iArr.length) : 0;
       document.getElementById('kpiIntencion').textContent = iArr.length ? iPct + '%' : '—';
@@ -5789,7 +5826,7 @@
           const text = await res.text();
           if (text.trim().length < 10) continue;
           return parseCSVText(text);
-        } catch (e) {}
+        } catch (e) { }
       }
       throw new Error('No local fallback data available');
     }
@@ -6020,7 +6057,7 @@
       const ph = document.getElementById('mediaPhotos');
       if (ph) {
         if (!MEDIA_PHOTOS.length) { ph.innerHTML = PENDING; } else
-        ph.innerHTML = MEDIA_PHOTOS.map((file, i) => `
+          ph.innerHTML = MEDIA_PHOTOS.map((file, i) => `
           <div class="photo-thumb" onclick="openLightbox(${i})">
             <img src="${photoSrc(file)}" alt="Foto ${i + 1}" loading="lazy">
             <div class="photo-zoom-icon">
@@ -6033,7 +6070,7 @@
       const vid = document.getElementById('mediaVideos');
       if (vid) {
         if (!MEDIA_VIDEOS.length) { vid.innerHTML = PENDING_VID; } else
-        vid.innerHTML = MEDIA_VIDEOS.map((v, i) => `
+          vid.innerHTML = MEDIA_VIDEOS.map((v, i) => `
           <div class="video-item">
             <a class="video-thumb" href="https://youtu.be/${v.id}" target="_blank" rel="noopener" aria-label="${v.title}">
               <img src="https://img.youtube.com/vi/${v.id}/hqdefault.jpg" alt="${v.title}" loading="lazy">
